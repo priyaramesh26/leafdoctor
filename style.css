@@ -1,0 +1,419 @@
+header{
+    display: flex;
+    backdrop-filter: blur(10px);
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    margin: -8px -8px;
+    position: fixed;
+    width: 100%;
+    top: 5px;
+}
+header div{
+    margin-left: 50px;
+}
+.leaf{
+    color: #006600;
+    font-weight: 900;
+    font-size: 22px;
+}
+.doctor{
+    color: #b5ec00;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    background-color: #006600; ;
+    color: white;
+    border-radius: 5px;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #E6F5E6;
+}
+#home h1{
+    font-size: 95px;
+    color: #006600; 
+}
+#home p{
+    font-size: 25px;
+}
+/* .container {
+    display: flex;
+    padding: 20px;
+} */
+#home a{
+    font-size: 20px;
+    color: white;
+    background-color: dodgerblue;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.subpara{
+    margin-top: -100px;
+}
+#home{
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+#home img{
+    width: 700px;
+    height: auto;
+}
+#home div{
+    padding: 20px;
+    width: 650px;
+}
+#AIEgnine h1 {
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+#AIEngine{
+    padding-top: 50px;
+}
+#AIEngine h1{
+    font-size: 70px;
+    text-align: center;
+    color: #006600;
+}
+
+.build{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.upload-btn-wrapper{
+    overflow:hidden;
+    display:inline-block;
+    cursor:pointer;
+    width: 70%;
+    margin: 0px 15%;
+    border-radius: 20px;
+}
+.upload-file{
+    border:2px dashed #eee;
+    color:#9b9b9b;
+    background-color: white;
+    width:100%;
+    height:250px;
+    border-radius: 8px;
+    font-size:15px;
+    cursor: pointer;
+}
+.upload-btn-wrapper input[type=file]{
+    width:70%;
+    position: relative;
+    margin: 0px 15%;
+    left:0;
+    right:0;
+    top: -190px;
+    opacity: 0;
+    cursor: pointer;
+    min-height:250px;
+}
+.success-1, .success-2{
+    display:none;
+    color: limegreen;
+}
+.success-1 i, .success-2 i{
+    font-size: 18px !important;
+    margin-left:6px;
+    margin-top:4px;
+    color: limegreen;
+    border: 1px solid limegreen;
+    padding: 5px;
+    border-radius: 50%;
+}
+.font-50{
+    font-size:50px;
+}
+.d-block{
+    display:block;
+}
+.btn .upload-file{
+    font-size: 30px;
+}
+.upload-btn{
+    display:block;
+    font-size: 18px;
+    color: limegreen;
+}
+
+.upload-btn i{
+    font-size: 100px;
+}
+
+#AIEgnine img{
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    }
+    
+.box{
+    width: 45%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box img{
+    border-radius: 20px;
+    height: 350px;
+    width: 350px;
+    display: none;
+}
+
+.box-result p{
+    background: limegreen;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display : none;
+    text-align: center;
+}
+
+.box-result{
+    display: none;
+}
+
+.accuracy{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.progress {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.progress > .inner {
+    position: absolute;
+    color: limegreen; 
+    border: 1px solid #9b9b9b;
+}
+
+.progress > svg {
+    height: 100%;
+    display: block;
+}
+.tutorial{
+    text-align: center;
+    font-size: 20px;
+}
+.tutorial a{
+    color: white;
+    text-decoration: none;
+    background-color: dodgerblue;
+    padding: 5px;
+    border-radius: 3px;
+}
+.init_status{
+    background: limegreen;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out .5s;
+    text-align: center;
+    margin: 10px 0px;
+
+}
+#supplements{
+    padding-top: 50px;
+}
+#supplements h1{
+    font-size: 70px;
+    text-align: center;
+    color: #006600;
+}
+.container1 {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 350px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.product-img{
+    width: 150px;
+    height: 210px;
+    display: flex;
+    margin-top: 10px;
+}
+.product img {
+    width: 100%;
+}
+.product img:hover{
+    transform: scale(1.05);
+}
+.product-name {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.product-price {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+    
+}
+
+#contact h1{
+    font-size: 70px;
+    text-align: center;
+    color: #006600;
+}
+#contact{
+    padding-top: 50px;
+}
+#contact div{
+    width: 350px;
+    background-color: white;
+    padding: 50px;
+    margin: 0px auto;
+    text-align: center;
+}
+#contact h2{
+    text-align: center;
+    font-size: 30px;
+}
+.socialmedia{
+    font-size: 20px;
+    margin: 0px;
+    width: 100%;
+}
+.nav a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+footer{
+    margin: 0px -8px;
+    margin-top: 100px;
+    background-color: #006600;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+
+/* Default styles */
+
+/* Laptop screens */
+@media screen and (max-width: 450px) {
+    #home img{
+        width: 350px;
+        height: auto;
+        transform: scale(1.1);
+    }
+    #AIEngine h1, #supplements h1, #contact h1{
+        font-size: 50px;
+    }
+    #home h1{
+        font-size: 55px;
+    }
+    #home div{
+        width: 370px;
+    }
+    nav a{
+        font-size: 12px;
+    }
+    nav{
+        justify-content: center;
+        width: 100%;
+    }
+    .nav a{
+        font-size: 14px;
+    }
+    #contact div{
+        width: 300px;
+        padding: 25px;
+    }
+    .subpara{
+        margin-top: 0px;
+    }
+    #image{
+        width: 310px;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    #home img{
+        width: 300px;
+        height: auto;
+        transform: scale(1.1);
+    }
+    nav a{
+        font-size: 14px;
+    }
+    #home div{
+        width: 300px;
+    }
+    #contact div{
+        width: 280px;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px){
+    .box{
+        width: 100%;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAF DOCTOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <div >
+            <span class="leaf">LEAF</span> <span class="doctor">DOCTOR</span>
+        </div>  
+        <nav>
+            <a href="#">Home</a>
+            <a href="#AIEngine">AI Engine</a>
+            <a href="#supplements">Supplements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div>
+            <h1>Plant Disease Detection</h1>
+        </div>
+        <img src="leaf pic.png">
+        <div class="subpara">
+            <p>This AI Engine Helps to Detect Diseases of Plant Leaves</p><br>
+            <a href="#AIEngine">AI Engine</a>
+        </div>
+        
+    </section>
+    
+    <section id="AIEngine">
+        <h1>AI Engine</h1>
+        <p class="build">Built with ❤️ for Farmers using (Tensorflow, Tensorflow.js, Python, Javascript, HTML5)</p>
+
+
+        <div class="upload-btn-wrapper">
+            <button class="btn upload-file font-weight-500">
+                <span class="upload-btn">
+                    <i class="material-icons d-block font-50 pb-2">cloud_upload</i>
+                    <p id="choose-text-1">Choose Image of Crop leaf</p>
+                </span>
+                <span class="upload-select-button" id="blankFile-1">
+                    *Supports .png, .jpg, .jpeg, .jfif
+                </span>
+                <span class="success-1">
+                    <i class="material-icons text-success">check</i>
+                </span>
+                <input type="file" name="uploadImage" id="uploadImage">
+            </button>
+            
+        </div>
+
+        <p class = "tutorial"> → Download test images <a href="https://github.com/rexsimiloluwah/PLANT-DISEASE-CLASSIFIER-WEB-APP-TENSORFLOWJS/tree/master/test-dataset" target="blank">HERE</a> </p>
+
+        <div class="row">
+            <div class="box">
+                <img src="" alt="" id="image" width="224" height="224">
+            </div>
+
+            <div class="box box-result">
+                <div class="init_status"></div>
+                <div>
+                    <h2>Your Plant is infected with :- <span class="pred_class"></span></h2>
+                    
+                </div>
+                <div class="accuracy">
+                    <div class="progress" id="progress">
+                        <div class="inner">
+                        
+                        </div>
+                    </div>
+
+                </div>
+                <p style="padding : 10px;"> CONFIDENCE : <b><span class="confidence"></span></b> %</p>
+            </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+        <script src="script.js"></script>
+    </section>
+
+    <section id="supplements">
+        <h1>Supplements</h1>
+        <div class="container1">
+            <div class="product">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/519okL2TX1L._AC_UL480_FMwebp_QL65_.jpg" alt="Fertilizer 1">
+                </div>
+                <a class="product-name" href="https://www.amazon.in/IFFCO-Urban-Gardens-Vermicompost-Fertilizer/dp/B085M7N9GR/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.37bad8da-0499-4510-838e-af217f0a67c4%3Aamzn1.sym.37bad8da-0499-4510-838e-af217f0a67c4&crid=ERGUR3KBQ6HB&cv_ct_cx=tap+fertilizer+for+all+plants&dib=eyJ2IjoiMSJ9.bQ0DEbwPog5xFk0W3wPBadNl5ni3w1z5yJjMsgfWUW3bRR6wqWxLkcJlqykwon3qyviH-TUanOpNHRud3Asm3Q.mHIoqo1znyCX4DjkV7-W2FBQXSXv3iUA2kqDPwQafo0&dib_tag=se&keywords=tap+fertilizer+for+all+plants&pd_rd_i=B085M7N9GR&pd_rd_r=bbfe9eca-dc4b-420c-a8c7-0f01b6f6b042&pd_rd_w=BZIrk&pd_rd_wg=xofoT&pf_rd_p=37bad8da-0499-4510-838e-af217f0a67c4&pf_rd_r=GQ49GP2RZ2BHCFSF6FSJ&qid=1710006865&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=top+fertili%2Caps%2C515&sr=1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1">IFFCO Urban Gardens</a>
+                <div class="product-price">$19.99</div>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/71GsqsOJW1L._AC_UL480_FMwebp_QL65_.jpg" alt="Fertilizer 2">
+                </div>
+                
+                <a class="product-name" href="https://www.amazon.in/Ugaoo-Plant-Fertilizer-Pellets-Nutrients/dp/B09GRZMV6T/ref=sr_1_4_sspa?crid=17X8078KHU5FE&dib=eyJ2IjoiMSJ9.Sixp0McG8gtbWSlSi0EJQLpSyWOjPG6J3UlAD6evHfziAPMNNlrs3ILRYQbF1zOS5cJXBtXR6Phj8PtSzvhP9X7FgpL8HvTCivCdG0PrRKATMqaBc99a3fLCCO3ZVmNuY8dC9oYcp8WgY4eHWidW-J71S_LkLS8FIKXxg3LdPs1MGLy9DVW99WPrNvjtzo8GzlFrzC9OEsWh-_Sr3vMEdD31VZzKdmkSZ5SAGhDxHHS7IsuMPtyNOP1M9Q7hRx8waM0uCu5kHo7h9o3ITb6GVJMXPZKAX9yHbvBanTSCg_8.jKr_wtqJI16hFQQ7BmK8b2OWs_f237Q0jwcC0z4jD94&dib_tag=se&keywords=tap+fertilizer+for+all+plants&qid=1710042243&sprefix=%2Caps%2C390&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Ugaoo Plant Fertilizer Pellets</a>
+                <div class="product-price">$19.99</div>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/71zxEAIaI7L._AC_UL480_FMwebp_QL65_.jpg" alt="Fertilizer 3">
+                </div>
+                
+                <a class="product-name" href="https://www.amazon.in/TrustBasket-Organic-Vermicompost-Fertilizer-Manure/dp/B07PRXV7MJ/ref=sr_1_8?crid=17X8078KHU5FE&dib=eyJ2IjoiMSJ9.Sixp0McG8gtbWSlSi0EJQLpSyWOjPG6J3UlAD6evHfziAPMNNlrs3ILRYQbF1zOS5cJXBtXR6Phj8PtSzvhP9X7FgpL8HvTCivCdG0PrRKATMqaBc99a3fLCCO3ZVmNuY8dC9oYcp8WgY4eHWidW-J71S_LkLS8FIKXxg3LdPs1MGLy9DVW99WPrNvjtzo8GzlFrzC9OEsWh-_Sr3vMEdD31VZzKdmkSZ5SAGhDxHHS7IsuMPtyNOP1M9Q7hRx8waM0uCu5kHo7h9o3ITb6GVJMXPZKAX9yHbvBanTSCg_8.jKr_wtqJI16hFQQ7BmK8b2OWs_f237Q0jwcC0z4jD94&dib_tag=se&keywords=tap+fertilizer+for+all+plants&qid=1710042243&sprefix=%2Caps%2C390&sr=8-8">TrustBasket Organic Vermicompost Fertilizer</a>
+                <div class="product-price">$19.99</div>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/61939hofyBL._AC_UL480_FMwebp_QL65_.jpg" alt="Fertilizer 4">
+                </div>
+                
+                <a class="product-name" href="https://www.amazon.in/OrganicDews-Liquid-Seaweed-Extract-Measuring/dp/B00VASGL7W/ref=sr_1_12?crid=17X8078KHU5FE&dib=eyJ2IjoiMSJ9.Sixp0McG8gtbWSlSi0EJQLpSyWOjPG6J3UlAD6evHfziAPMNNlrs3ILRYQbF1zOS5cJXBtXR6Phj8PtSzvhP9X7FgpL8HvTCivCdG0PrRKATMqaBc99a3fLCCO3ZVmNuY8dC9oYcp8WgY4eHWidW-J71S_LkLS8FIKXxg3LdPs1MGLy9DVW99WPrNvjtzo8GzlFrzC9OEsWh-_Sr3vMEdD31VZzKdmkSZ5SAGhDxHHS7IsuMPtyNOP1M9Q7hRx8waM0uCu5kHo7h9o3ITb6GVJMXPZKAX9yHbvBanTSCg_8.jKr_wtqJI16hFQQ7BmK8b2OWs_f237Q0jwcC0z4jD94&dib_tag=se&keywords=tap+fertilizer+for+all+plants&qid=1710042243&sprefix=%2Caps%2C390&sr=8-12">OrganicDews Liquid Seaweed</a>
+                <div class="product-price">$19.99</div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <div>
+            <h2>FirstName Lastname</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolores alias hic consequatur, itaque omnis dolorem ducimus repellat impedit amet!</p>
+            <span class="socialmedia">
+                <h3>Social Media Handles:</h3>
+                <i class="fab fa-instagram"></i> - Lorem, ipsum.<br>
+                <i class="fab fa-twitter"></i> - Lorem, ipsum.<br>
+                <i class="fab fa-github"></i> - Lorem, ipsum.
+            </span>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#AIEngine">AI Engine</a>
+            <a href="#supplements">Supplements</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="credit">
+            
+            <p>Made with <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif" alt="❤" width="20" height="20"> in India</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
