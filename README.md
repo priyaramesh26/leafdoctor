@@ -39,7 +39,7 @@ The system architecture follows a client-server model, consisting of the followi
 - <a href="https://github.com/priyaramesh26" target="_blank">VISHNUPRIYA R</a>
 
 ## 📝 License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/priyaramesh26/leafdoctor/blob/main/LICENSE).
 
 
 ## 📹 Video Demonstration
