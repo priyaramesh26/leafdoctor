@@ -1,10 +1,10 @@
 # 🌿 Leaf Doctor - Plant Disease Prediction 🌱
 
 ## 🌐 Website
-Access the Website: [Leaf Doctor - Plant Disease Prediction](https://priyaramesh26.github.io/leafdoctor/)
+Access the Website: <a href="https://priyaramesh26.github.io/leafdoctor/" target="_blank">Leaf Doctor - Plant Disease Prediction</a>
 
 ## 📚 Dataset
-The dataset used for training the machine learning model can be found [Click here to Download Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease).
+The dataset used for training the machine learning model can be found <a href="https://www.kaggle.com/datasets/emmarex/plantdisease" target="_blank">Click here to Download Dataset</a>
 
 ## 🌐 Overview
 Leaf Doctor is a machine learning-powered tool designed to aid farmers and gardeners in predicting diseases affecting their plants. Leveraging TensorFlow.js for client-side inference and a backend server for processing requests, the application offers a seamless and intuitive user experience for disease detection and management.
@@ -36,7 +36,7 @@ The system architecture follows a client-server model, consisting of the followi
 - Google Colab
 
 ## 👨‍💻 Contributor
-- [VISHNUPRIYA](https://github.com/priyaramesh26)
+- <a href="https://github.com/priyaramesh26" target="_blank">VISHNUPRIYA R</a>
 
 ## 📝 License
 This project is licensed under the [MIT License](LICENSE).
@@ -45,5 +45,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📹 Video Demonstration
 
 <img src="demo.gif" width="768" height="500" />
-
-
